@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
 import { LogOut, LayoutDashboard, Package, FileText, Receipt, ClipboardList, Lock } from 'lucide-react';
-import logo from '../assets/hero.png';
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const { user, logout } = useContext(AuthContext);
