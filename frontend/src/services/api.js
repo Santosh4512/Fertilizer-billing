@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:4000/api', // Backend base URL
+  baseURL: 'https://fertilizer-billing.onrender.com/api', // Backend base URL - production
 });
 
 // Add a request interceptor to attach JWT token

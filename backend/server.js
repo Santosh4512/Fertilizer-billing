@@ -17,6 +17,13 @@ app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/products', require('./routes/productRoutes'));
 app.use('/api/bills', require('./routes/billRoutes'));
 
+app.get('/', (req, res) => {
+  res.json({
+    success: true,
+    message: 'Fertilizer Billing Backend is live',
+  });
+});
+
 app.get('/api/health', (req, res) => res.json({ status: 'ok' }));
 app.get('/api/config/razorpay', (req, res) => {
   res.json({ keyId: process.env.RAZORPAY_KEY_ID || 'test_key' });
