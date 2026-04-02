@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
-import { Leaf, LogOut, LayoutDashboard, Package, FileText, Receipt, ClipboardList, Lock } from 'lucide-react';
+import { LogOut, LayoutDashboard, Package, FileText, Receipt, ClipboardList, Lock } from 'lucide-react';
+import logo from '../assets/hero.png';
 
 const Navbar = () => {
   const { user, logout } = useContext(AuthContext);
@@ -26,7 +27,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Leaf className="text-[var(--color-primary)] mr-2" size={28} />
+            <img src={logo} alt="Fertilizer Billing Logo" className="h-10 w-10 rounded-full mr-2" />
             <span className="text-lg font-bold text-slate-800">Sri Peddintlamma Fertilizers</span>
           </div>
           
